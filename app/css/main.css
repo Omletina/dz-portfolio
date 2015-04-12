@@ -1,1 +1,23 @@
-h1 { color:red;}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family:'fira_sansbook'; color:#4a545d;}
+h1, .h1 { font-size:27px;}
+h2, .h2 { font-size:25px;}
+h3, .h3 { font-size:23px;}
+h4, .h4 { font-size:21px;}
+h5, .h5 { font-size:19px;}
+h6, .h6 { font-size:17px;}
+
+
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
