@@ -166,8 +166,60 @@
 		</footer>
 	</div>
 
+	<!-- modal form : start -->
+	<div class="overflow-bl"></div>
+	<div class="modal-bl">
+		<div class="modal-title">
+			<span class="modal-title-text">Добавление проекта</span>
+			<a href="javascript://" class="close-btn"></a>
+		</div>
+		<div class="modal-section-table">
+			<div class="feedback-section-tr cl">
+				<div class="feedback-label">Название проекта</div>
+				<div class="feedback-input-bl error">
+					<span class="feedback-tip left-tip">
+						<span class="tip-inner">введите название</span>
+					</span> 
+					<input class="feedback-input required" type="text" name="name" placeholder="Введите название">
+				</div>
+			</div>
+			<div class="feedback-section-tr cl">
+				<div class="feedback-label">Картинка проекта</div>
+				<div class="feedback-input-bl">
+					<span class="feedback-tip left-tip">
+						<span class="tip-inner">изображение</span>
+					</span> 
+					<div class="file-style-bl">
+						<input class="feedback-input input-dn-file" type="file" name="upload">
+						<div class="upload-hare">
+							<div class="upload-ico"></div>
+							<input class="feedback-input required" type="text" readonly placeholder="Загрузите изображение" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="feedback-section-tr cl">
+				<div class="feedback-label">URL проекта</div>
+				<div class="feedback-input-bl error">
+					<span class="feedback-tip left-tip">
+						<span class="tip-inner">ссылка на проект</span>
+					</span> 
+					<input class="feedback-input required" type="text" name="link" placeholder="Добавьте ссылку">
+				</div>
+			</div>
+			<div class="feedback-section-tr cl">
+				<div class="feedback-label">Описание</div>
+				<div class="feedback-input-bl error">
+					<span class="feedback-tip left-tip">
+						<span class="tip-inner">описание проекта</span>
+					</span> 
+					<textarea class="feedback-textarea required" name="message" id="" cols="30" rows="2" placeholder="Пара слов о Вашем проекте"></textarea>
+				</div>
+			</div>
+		</div>
 
-
+	</div>
+	<!-- modal form : end -->
 
 	<!-- JS -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

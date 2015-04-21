@@ -152,13 +152,14 @@ textarea { resize:none; }
 .feedback {}
 .feedback-title { font-family:fira_sansbook; color:#fff; font-size:25px; padding:42px 15px; border-bottom:17px solid #67dffa; background:#48cbe8; text-align:center;}
 
-.feedback-section-tr { display: table; width:402px; margin:0 auto 12px;}
+.feedback-section-table { width:402px; margin:0 auto;}
+.feedback-section-tr { display: table; width:100%;  margin:0 auto 12px;}
    .feedback-section-td { display:table-cell; width:50%; padding:0 0 0 18px;}
    .feedback-section-td:first-child { padding:0;}
    .feedback-input-bl { position: relative;}
       .feedback-label { margin-bottom:2px; color: #959aa8; font-size:19px; font-family:fira_sanslight; }
-      .feedback-input { height:41px; line-height:41px; font-size:12px; font-family:fira_sanslight; color:#48cbe8; padding:5px 9px; border:1px solid #48cbe8; border-radius:4px; width:100%; background:#fff;}
-      .feedback-textarea { line-height:41px; font-size:12px; font-family:fira_sanslight; color:#48cbe8; padding:5px 9px; border:1px solid #48cbe8; border-radius:4px; width:100%; background:#fff;}
+      .feedback-input { height:41px; line-height:41px; font-size:12px; font-family:fira_sanslight; color:#48cbe8; padding:5px 9px; border:1px solid #48cbe8; border-radius:4px; width:100%; background:#fff; webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;}
+      .feedback-textarea { line-height:41px; font-size:12px; font-family:fira_sanslight; color:#48cbe8; padding:5px 9px; border:1px solid #48cbe8; border-radius:4px; width:100%; background:#fff; webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;}
       .feedback-input::-webkit-input-placeholder { color:#48cbe8; }
       .feedback-input:-moz-placeholder,
       .feedback-input::-moz-placeholder { color:#48cbe8; }
@@ -168,7 +169,8 @@ textarea { resize:none; }
       .feedback-textarea::-moz-placeholder { color:#48cbe8; }
       .feedback-textarea:-ms-input-placeholder { color:#48cbe8; }
 
-.feedback-input-bl.error {}
+.feedback-input-bl.error .feedback-input, 
+.feedback-input-bl.error .feedback-textarea { border-color:#f97e76; background:#fad2d1; }
 
 .feedback-section-tr.capcha-label { margin: 0 auto;}
 .feedback-section-tr.capcha-bl { margin: 0 auto 30px;}
@@ -189,3 +191,25 @@ textarea { resize:none; }
 
 .btn-style { height:32px; min-width: 160px; padding:0 10px; background:#48cbe8; border:0; border-radius: 4px; border-style: solid; color: #fff; font-size:19px; font-family:fira_sansbook; box-shadow: 0px 2px 0px rgba(59,168,192,1); cursor:pointer;}
 .btn-style.btn-grey { background:#849db5; box-shadow: 0px 2px 0px rgba(104,123,143,1);}
+
+
+
+/*-- MODAL FORM --*/  
+.overflow-bl { position: fixed;  width:100%; height:100%; top: 0; left: 0; right: 0; bottom: 0; background: rgba(88,105,122,.75); z-index: 3000;}
+
+.modal-bl { top:50%; left: 50%; margin:-250px 0 0 -180px; position: fixed; background:#eff3f7; width:360px; z-index: 3001; border-radius: 4px; height: 500px;}
+
+.modal-title { background: #48cbe8; border-bottom: 10px solid #67dffa; border-radius: 4px 4px 0 0; padding: 5px 35px 5px 20px; position: relative;  margin: 0;}
+   .modal-title-text { font-size:25px; font-family:fira_sansregular; color: #fff;}
+   .close-btn {position: absolute; right: 12px; top: 0; bottom: 0; height:100%; width: 25px; background: url(../img/close-ico.png) no-repeat 0 50%; }
+
+.modal-section-table { width:320px; margin:10px auto 0;}
+
+
+.file-input-box,.file-input-box input{overflow:hidden;}
+.file-input-box{position:relative;width:300px;height:24px;background:url('/_example/_test/fileinput/fileinputbutton.png')no-repeat right top;cursor:pointer;}
+.file-input-text{float:left;height:20px;line-height:20px;width:215px;}
+.file-style-bl { position: relative;}
+.input-dn-file {position: absolute; opacity: 0; z-index: 3; padding: 0; position: absolute; top: 0; bottom: 0; right: 0; left: 0; cursor:pointer; }
+.upload-hare {padding: 0; z-index: 1; cursor:pointer; }
+.upload-ico {position: absolute; right: 1px; top: 1px; bottom: 1px; width: 52px; background-color: #48cbe8; background-image: url(../img/upload-ico.png); background-repeat: no-repeat; background-position: 50% 49%; border-radius: 0 4px 4px 0; z-index: 2; }

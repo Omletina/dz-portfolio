@@ -55,59 +55,61 @@
 						<div class="feedback-title">У вас интересный проект? Напишите мне</div>
 						<div class="wrapp-box-body cl">
 							<form id="feedback-form">
-								<div class="feedback-section-tr cl">
-									<div class="feedback-section-td">
-										<div class="feedback-label">Имя</div>
+								<div class="feedback-section-table">
+									<div class="feedback-section-tr cl">
+										<div class="feedback-section-td">
+											<div class="feedback-label">Имя</div>
+											<div class="feedback-input-bl error">
+												<span class="feedback-tip left-tip">
+													<span class="tip-inner">Вы не ввели имя</span>
+												</span> 
+												<input class="feedback-input required" type="text" name="fio" placeholder="Как к Вам обращаться">
+											</div>
+										</div>
+										<div class="feedback-section-td">
+											<div class="feedback-label">Email</div>
+											<div class="feedback-input-bl error">
+												<span class="feedback-tip right-tip">
+													<span class="tip-inner">Вы не ввели Email</span>
+												</span> 
+												<input class="feedback-input required" type="text" name="email" placeholder="Куда мне писать">
+											</div>
+										</div>
+									</div>
+									<div class="feedback-section-tr cl">
+										<div class="feedback-label">Сообщение</div>
 										<div class="feedback-input-bl error">
 											<span class="feedback-tip left-tip">
-												<span class="tip-inner">Вы не ввели имя</span>
+												<span class="tip-inner">Ваш вопрос</span>
 											</span> 
-											<input class="feedback-input required" type="text" name="fio" placeholder="Как к Вам обращаться">
+											<textarea class="feedback-textarea required" name="message" id="" cols="30" rows="5" placeholder="Кратко в чем суть"></textarea>
 										</div>
 									</div>
-									<div class="feedback-section-td">
-										<div class="feedback-label">Email</div>
-										<div class="feedback-input-bl error">
-											<span class="feedback-tip right-tip">
-												<span class="tip-inner">Вы не ввели Email</span>
-											</span> 
-											<input class="feedback-input required" type="text" name="email" placeholder="Куда мне писать">
+									<div class="feedback-section-tr capcha-label cl">
+										<div class="feedback-label">Введите код, указанный на картинке</div>
+									</div>
+									<div class="feedback-section-tr capcha-bl cl">
+										<div class="feedback-section-td">
+											<div class="capcha">
+												<img src="img/capcha.png" height="46" width="146" alt="">
+											</div>
+										</div>
+										<div class="feedback-section-td">
+											<div class="feedback-input-bl error">
+												<span class="feedback-tip right-tip">
+													<span class="tip-inner">Вы не ввели код</span>
+												</span> 
+												<input class="feedback-input required" type="text" name="captcha" placeholder="Куда мне писать">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="feedback-section-tr cl">
-									<div class="feedback-label">Сообщение</div>
-									<div class="feedback-input-bl error">
-										<span class="feedback-tip left-tip">
-											<span class="tip-inner">Ваш вопрос</span>
-										</span> 
-										<textarea class="feedback-textarea required" name="message" id="" cols="30" rows="5" placeholder="Кратко в чем суть"></textarea>
-									</div>
-								</div>
-								<div class="feedback-section-tr capcha-label cl">
-									<div class="feedback-label">Введите код, указанный на картинке</div>
-								</div>
-								<div class="feedback-section-tr capcha-bl cl">
-									<div class="feedback-section-td">
-										<div class="capcha">
-											<img src="img/capcha.png" height="46" width="146" alt="">
+									<div class="feedback-section-tr">
+										<div class="feedback-section-td">
+											<input type="submit" class="btn-style" value="Отправить">
 										</div>
-									</div>
-									<div class="feedback-section-td">
-										<div class="feedback-input-bl error">
-											<span class="feedback-tip right-tip">
-												<span class="tip-inner">Вы не ввели код</span>
-											</span> 
-											<input class="feedback-input required" type="text" name="captcha" placeholder="Куда мне писать">
+										<div class="feedback-section-td">
+											<input type="reset" class="btn-style btn-grey" value="Очистить">
 										</div>
-									</div>
-								</div>
-								<div class="feedback-section-tr">
-									<div class="feedback-section-td">
-										<input type="submit" class="btn-style" value="Отправить">
-									</div>
-									<div class="feedback-section-td">
-										<input type="reset" class="btn-style btn-grey" value="Очистить">
 									</div>
 								</div>
 							</form>
