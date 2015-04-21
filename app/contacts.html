@@ -50,82 +50,70 @@
 			<div class="conteiner-bl cl">
 				<!-- variable content : start -->
 				<div class="main-content-bl">
-					<!-- main information : start -->
+					<!-- my works : start -->
 					<section class="wrapp-box-bl cl">
-						<div class="wrapp-box-header">Основная информация</div>
+						<div class="feedback-title">У вас интересный проект? Напишите мне</div>
 						<div class="wrapp-box-body cl">
-							<div class="img-box">
-								<div class="img-wrap">
-									<img src="img/gipno.jpg" class="avatar" alt="Сапарова Татьяна">
-								</div>
-							</div>
-							<ul class="profile-list">
-								<li class="profile-item cl">
-									<div class="profile-quest">Меня зовут:</div>
-									<div class="profile-reply">Сапарова Татьяна</div>
-								</li>
-								<li class="profile-item cl">
-									<div class="profile-quest">Мой возраст:</div>
-									<div class="profile-reply">27 лет</div>
-								</li>
-								<li class="profile-item cl">
-									<div class="profile-quest">Мой город:</div>
-									<div class="profile-reply">Москва, Россия</div>
-								</li>
-								<li class="profile-item cl">
-									<div class="profile-quest">Моя специализация:</div>
-									<div class="profile-reply">html-beginner</div>
-								</li>
-								<li class="profile-item cl">
-									<div class="profile-quest">Ключевые навыки:</div>
-									<div class="profile-reply skills">
-										<ul class="skill-list cl easing">
-											<li class="skill-item">html</li>
-											<li class="skill-item">css</li>
-											<li class="skill-item">javascript</li>
-											<li class="skill-item">gulp</li>
-											<li class="skill-item">git</li>
-										</ul>
+							<form id="feedback-form">
+								<div class="feedback-section-tr cl">
+									<div class="feedback-section-td">
+										<div class="feedback-label">Имя</div>
+										<div class="feedback-input-bl error">
+											<span class="feedback-tip left-tip">
+												<span class="tip-inner">Вы не ввели имя</span>
+											</span> 
+											<input class="feedback-input required" type="text" name="fio" placeholder="Как к Вам обращаться">
+										</div>
 									</div>
-								</li>
-							</ul>
+									<div class="feedback-section-td">
+										<div class="feedback-label">Email</div>
+										<div class="feedback-input-bl error">
+											<span class="feedback-tip right-tip">
+												<span class="tip-inner">Вы не ввели Email</span>
+											</span> 
+											<input class="feedback-input required" type="text" name="email" placeholder="Куда мне писать">
+										</div>
+									</div>
+								</div>
+								<div class="feedback-section-tr cl">
+									<div class="feedback-label">Сообщение</div>
+									<div class="feedback-input-bl error">
+										<span class="feedback-tip left-tip">
+											<span class="tip-inner">Ваш вопрос</span>
+										</span> 
+										<textarea class="feedback-textarea required" name="message" id="" cols="30" rows="5" placeholder="Кратко в чем суть"></textarea>
+									</div>
+								</div>
+								<div class="feedback-section-tr capcha-label cl">
+									<div class="feedback-label">Введите код, указанный на картинке</div>
+								</div>
+								<div class="feedback-section-tr capcha-bl cl">
+									<div class="feedback-section-td">
+										<div class="capcha">
+											<img src="img/capcha.png" height="46" width="146" alt="">
+										</div>
+									</div>
+									<div class="feedback-section-td">
+										<div class="feedback-input-bl error">
+											<span class="feedback-tip right-tip">
+												<span class="tip-inner">Вы не ввели код</span>
+											</span> 
+											<input class="feedback-input required" type="text" name="captcha" placeholder="Куда мне писать">
+										</div>
+									</div>
+								</div>
+								<div class="feedback-section-tr">
+									<div class="feedback-section-td">
+										<input type="submit" class="btn-style" value="Отправить">
+									</div>
+									<div class="feedback-section-td">
+										<input type="reset" class="btn-style btn-grey" value="Очистить">
+									</div>
+								</div>
+							</form>
 						</div>
 					</section>
-					<!-- main information : end -->
-					<!-- work experience : start -->
-					<section class="wrapp-box-bl cl">
-						<div class="wrapp-box-header">Опыт работы</div>
-						<div class="wrapp-box-body">
-							<ul class="experience-list">
-								<li class="experience-item icon-work">
-									<div class="place">"Vipro" - html верстальщик</div>
-									<div class="date">12.01.2013 - по настоящее время</div>
-								</li>
-								<li class="experience-item icon-work">
-									<div class="place">"Zoovet" - html верстальщик</div>
-									<div class="date">20.02.2012 - 15.12.2012</div>
-								</li>
-							</ul>
-						</div>
-					</section>
-					<!-- work experience : end -->
-					<!-- education : start -->
-					<section class="wrapp-box-bl cl">
-						<div class="wrapp-box-header">Образование</div>
-						<div class="wrapp-box-body">
-							<ul class="education-list">
-								<li class="education-item icon-college">
-									<div class="place">Высшее, МИП</div>
-									<div class="date">2007 - 2013</div>
-								</li>
-								<li class="education-item icon-courses">
-									<div class="place">Курсы Loftschool.ru</div>
-									<div class="date">март 2015 - по настоящее время</div>
-								</li>
-							</ul>
-						</div>
-					</section>
-					<!-- education : end -->
+					<!-- my works : end -->
 				</div>
 				<!-- variable content : end -->
 				<!-- sidebar : start -->
@@ -134,13 +122,13 @@
 					<nav class="navigation">
 						<ul class="navigation-list easing">
 							<li class="navigation-item">
-								<a href="index.html" class="navigation-link active">Обо мне</a>
+								<a href="index.html" class="navigation-link">Обо мне</a>
 							</li>
 							<li class="navigation-item">
 								<a href="projects.html" class="navigation-link">Мои работы</a>
 							</li>
 							<li class="navigation-item">
-								<a href="contacts.html" class="navigation-link">Связаться со мной</a>
+								<a href="contacts.html" class="navigation-link active">Связаться со мной</a>
 							</li>
 						</ul>
 					</nav>
