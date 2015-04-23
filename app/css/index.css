@@ -178,7 +178,7 @@ textarea { resize:none; }
 .wrapper-bl { position:relative; min-height:100%; height:auto!important; overflow:hidden; }
 .wrapper-bl:after { content: ""; height: 80px; display: block; }
 
-.conteiner-bl { max-width:960px; margin:39px auto 10px;}
+.conteiner-bl { max-width:960px; min-width:960px; margin:39px auto 10px;}
 .sidebar-bl { float:left; width:250px;}
 .main-content-bl { float:right; width:650px;}
 
