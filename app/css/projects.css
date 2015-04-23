@@ -1,0 +1,15 @@
+ /*-- may project --*/
+.project-item { width:185px; float:left; margin:12px 0 25px 28px;}
+.project-item:nth-child(3n+1) { margin:12px 0 25px 0; clear: both;}
+.project-images-bl  { border:2px solid #3ba8c0; height:130px; border-radius:6px; display:inline-block; margin:0 auto; max-width:183px; width:100%; overflow:hidden; position:relative; cursor:pointer; }
+
+.project-tip { display:block; width:100%; height:0; position:absolute; left:0; bottom:0; background:rgba(1,108,164,0.75); overflow:hidden;}
+   .project-tip-wrap { display:table-cell; width:183px; height:127px; vertical-align:middle; text-align:center;}
+      .project-tip-text { font-family:fira_sansbook; font-size:12px; color: #fff; padding: 3px; border: 2px solid #fff; border-radius: 4px; display: inline-block; vertical-align: middle;}
+.project-images-bl:hover .project-tip { height:100%;}
+.project-title { margin-bottom:6px; text-align:center; font-size: 13px;}
+   .project-link { color:#3ba8c0; font-family:fira_sanslight_italic; font-size:13px; display:inline-block; text-decoration:none;}
+.project-description { font-size:15px; color:#4a545d; font-family:fira_sanslight; text-align:center;}
+.project-item.soother { font-family:fira_sansbook; font-size:13px; color: #fff; height:130px; border: 1px dashed #3ba8c0; border-radius:4px; display: inline-block; vertical-align: middle; background:#edf8fc; cursor:pointer;}
+   .project-item.soother .project-description { display:table-cell; width:183px; height:130px; color:#3ba8c0; font-family:fira_sanslight; font-size:13px; vertical-align:middle; text-align:center;}
+   .project-desc-centr { display:inline-block; padding:45px 0 0 0; background: url(../img/soother-ico.png) no-repeat 50% 0;}

@@ -1,0 +1,15 @@
+ /*-- FEEDBACK --*/
+.feedback {}
+.feedback-title { font-family:fira_sansbook; color:#fff; font-size:27px; padding:42px 15px; border-bottom:17px solid #67dffa; background:#48cbe8; text-align:center; border-radius:4px 4px 0 0;}
+.feedback-table { margin:23px auto 0;}
+.feedback-table .textarea-f { height: 184px;}
+
+
+
+.section-tr.capcha-label { margin:-4px auto 0;}
+.section-tr.capcha-bl { margin: 0 auto 33px;}
+.capcha-bl .section-td { vertical-align:middle;}
+.capcha { width:190px; height:80px; border:1px solid #48cbe8; border-radius:4px; background:#fff; text-align:center;}
+   .capcha img { display: inline-block; margin:16px 0;}
+
+.capcha-input { height: 32px; line-height:32px;}

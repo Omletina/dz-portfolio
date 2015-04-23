@@ -1,0 +1,10 @@
+
+/*-- MODAL LOGIN --*/
+.login-section-table { width: 425px; margin:19px auto 25px;}
+.login-section-table .section-tr { margin: 0 auto 14px;}
+.login-modal-title { text-align:center; padding:19px 0;   border-bottom: 13px solid #67dffa;}
+.login-modal-bl { width:590px;   margin: -250px 0 0 -295px;}
+.login-title-text { font-size:40px;}
+.login-label { text-align:center; font-size:36px; margin-bottom:6px;}
+.modal-section-table  .login-input-f { height:60px; line-height:60px; font-size:17px;}
+.login-btn { display:block; margin:21px auto 0; height:50px; font-size:36px; width:226px;}

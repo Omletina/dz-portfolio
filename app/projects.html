@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Portfolio Omlet</title>
+	<title>Страница с проектами</title>
 	<!-- SEO -->
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<!-- CSS -->
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/font.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/projects.css">
 	<!-- JS -->
 	<script src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -161,65 +180,83 @@
 	</div>
 	<div class="footer-wrap">
 		<footer class="footer-bl">
-				<a href="javascript://" class="login-link easing"></a>
+				<a href="login.html" class="login-link easing"></a>
 				<div class="copi">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 		</footer>
 	</div>
 
 	<!-- modal form : start -->
-	<div class="overflow-bl"></div>
-	<div class="modal-bl">
+	<div id="overflowBl" class="overflow-bl"></div>
+	<div id="modalBl" class="modal-bl fide-bl">
 		<div class="modal-title">
 			<span class="modal-title-text">Добавление проекта</span>
 			<a href="javascript://" class="close-btn"></a>
 		</div>
-		<div class="modal-section-table">
-			<div class="feedback-section-tr cl">
-				<div class="feedback-label">Название проекта</div>
-				<div class="feedback-input-bl error">
-					<span class="feedback-tip left-tip">
-						<span class="tip-inner">введите название</span>
-					</span> 
-					<input class="feedback-input required" type="text" name="name" placeholder="Введите название">
+		<div class="section-table modal-section-table">
+			<div class="section-tr cl modal-section-tr error-show">
+				<div class="error-bl-modal">
+					<span class="close-mini"></span>
+					<span class="big-text">Ошибка!</span>
+					<span class="mini-text">Невозможно добавить проект. </span>
 				</div>
 			</div>
-			<div class="feedback-section-tr cl">
-				<div class="feedback-label">Картинка проекта</div>
-				<div class="feedback-input-bl">
-					<span class="feedback-tip left-tip">
+			<div class="section-tr cl modal-section-tr">
+				<div class="label-f modal-label">Название проекта</div>
+				<div class="input-bl error">
+					<span class="tip-bl tip-left">
+						<span class="tip-inner">введите название</span>
+					</span>
+					<input class="input-f" type="text" name="name" placeholder="Введите название">
+				</div>
+			</div>
+			<div class="section-tr cl modal-section-tr">
+				<div class="label-f modal-label">Картинка проекта</div>
+				<div class="input-bl">
+					<span class="tip-bl tip-left">
 						<span class="tip-inner">изображение</span>
-					</span> 
+					</span>
 					<div class="file-style-bl">
-						<input class="feedback-input input-dn-file" type="file" name="upload">
+						<input class="input-f input-dn-file" type="file" name="upload">
 						<div class="upload-hare">
 							<div class="upload-ico"></div>
-							<input class="feedback-input required" type="text" readonly placeholder="Загрузите изображение" />
+							<input class="input-f input-value" type="text" readonly placeholder="Загрузите изображение" />
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="feedback-section-tr cl">
-				<div class="feedback-label">URL проекта</div>
-				<div class="feedback-input-bl error">
-					<span class="feedback-tip left-tip">
+			<div class="section-tr cl modal-section-tr">
+				<div class="label-f modal-label">URL проекта</div>
+				<div class="input-bl error">
+					<span class="tip-bl tip-left">
 						<span class="tip-inner">ссылка на проект</span>
-					</span> 
-					<input class="feedback-input required" type="text" name="link" placeholder="Добавьте ссылку">
+					</span>
+					<input class="input-f" type="text" name="link" placeholder="Добавьте ссылку">
 				</div>
 			</div>
-			<div class="feedback-section-tr cl">
-				<div class="feedback-label">Описание</div>
-				<div class="feedback-input-bl error">
-					<span class="feedback-tip left-tip">
+			<div class="section-tr cl modal-section-tr">
+				<div class="label-f modal-label">Описание</div>
+				<div class="input-bl error">
+					<span class="tip-bl tip-left">
 						<span class="tip-inner">описание проекта</span>
-					</span> 
-					<textarea class="feedback-textarea required" name="message" id="" cols="30" rows="2" placeholder="Пара слов о Вашем проекте"></textarea>
+					</span>
+					<textarea class="textarea-f modal-textarea-f" name="message" id="" placeholder="Пара слов о Вашем проекте"></textarea>
 				</div>
+			</div>
+			<div class="section-tr">
+				<input type="submit" class="btn-style modal-btn easing" value="Добавить">
 			</div>
 		</div>
-
 	</div>
 	<!-- modal form : end -->
+	<!-- modal form ok : start -->
+	<div class="modal-bl modal-ok-bl">
+		<div class="modal-ok">
+			<span class="close-mini"></span>
+			<span class="big-text">Ошибка!</span>
+			<span class="mini-text">Невозможно добавить проект. </span>
+		</div>
+	</div>
+	<!-- modal form ok : end -->
 
 	<!-- JS -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
