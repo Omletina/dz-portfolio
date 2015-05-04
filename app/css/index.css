@@ -29,13 +29,15 @@ textarea { resize:none; }
 
 
  /* Первый вариант */
+  /*
 .cl::after { clear: both; content: "."; display: block; font-size: 0; height: 0; }
 :first-child + html .cl { display: inline-block; }
+*/
  /* Первый вариант : end */
   /* Второй вариант */
-.clearfix:before,
-.clearfix:after { content: " "; display: table;}
-.clearfix:after { clear: both; }
+.cl:before,
+.cl:after { content: " "; display: table;}
+.cl:after { clear: both; }
  /* Второй вариант : end */
 
 .browsehappy { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
@@ -169,7 +171,8 @@ textarea { resize:none; }
    .footer-bl:before { content:""; display:inline-block; height:100%; vertical-align:middle; width:0; }
          .copi { display:inline-block; vertical-align:middle text-align:center; color:#4a545d; font-size:13px; font-family: 'fira_sanslight';}
        /*-- footer link --*/
-      .login-link { position:absolute; left:33px; top:25px; display: block; width:20px; height:32px; background:rgba(0,0,0,0) url(../img/login-sprite.png) no-repeat 100% 0;}
+      .login-link { position:absolute; left:33px; top:25px; display: block; width:20px; height:32px; 
+      	background-image: url(../img/login-sprite.png); background-repeat: no-repeat; background-position: 100% 0; background-color:rgba(0,0,0,0); }
       .login-link:after { content:""; background:#58697a; display:block; height:8px; left:16px; position:absolute; top:8px; width:2px; }
       .login-link:hover:after { height:0; }
 
@@ -197,13 +200,18 @@ textarea { resize:none; }
 
 
  /*-- contacts --*/
-.contacts { display:block; border-radius:4px; overflow:hidden; background:#3ba8c0;}
+.contacts { display:block; border-radius:4px; overflow:hidden; background:#3ba8c0; font-style: normal;}
    .contacts-title { padding:10px 0 2px 20px;}
       .contacts-title .title-text { color:#fff; }
 .contacts-list { margin:0; padding:0; list-style:none; }
    .contacts-item:nth-child(1) { background:#41b9d4;}
    .contacts-item:nth-child(2) { background:#48cbe8;}
    .contacts-item:nth-child(3) { background:#51daf8;}
+
+   .contacts-item:first-child { background:#41b9d4;}
+   .contacts-item:first-child + .contacts-item { background:#48cbe8;}
+   .contacts-item:first-child + .contacts-item + .contacts-item { background:#51daf8;}
+
       .contacts-link { display:block; color:#fff; padding:9px 18px 7px 43px; text-decoration:none; font-family:fira_sansbook; font-size:15px;}
       .contacts-link:before { background-image: url("../img/contact-sprite.png"); content:""; display:inline-block; height:21px; margin-right:20px; vertical-align: middle; width:21px;}
       .contacts-link.mail-icon:before { background-position:-33px 1px;}

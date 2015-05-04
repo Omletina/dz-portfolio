@@ -157,7 +157,7 @@
 					</nav>
 					<!-- navigation : end -->
 					<!-- contacts : start -->
-					<adress class="contacts">
+					<address class="contacts">
 						<div class="contacts-title">
 							<span class="title-text h4">Контакты</span>
 						</div>
@@ -172,7 +172,7 @@
 								<a class="contacts-link skype-icon" href="skype:omletina?chat">omletina</a>
 							</li>
 						</ul>
-					</adress>
+					</address>
 					<!-- contacts : end -->
 				</aside>
 			</div>
@@ -192,60 +192,62 @@
 			<span class="modal-title-text">Добавление проекта</span>
 			<a href="javascript://" class="close-btn"></a>
 		</div>
-		<div class="section-table modal-section-table">
-			<div class="section-tr cl modal-section-tr error-show">
-				<div class="error-bl-modal">
-					<span class="close-mini"></span>
-					<span class="big-text">Ошибка!</span>
-					<span class="mini-text">Невозможно добавить проект. </span>
+		<form>
+			<div class="section-table modal-section-table">
+				<div class="section-tr cl modal-section-tr error-show">
+					<div class="error-bl-modal">
+						<span class="close-mini"></span>
+						<span class="big-text">Ошибка!</span>
+						<span class="mini-text">Невозможно добавить проект. </span>
+					</div>
 				</div>
-			</div>
-			<div class="section-tr cl modal-section-tr">
-				<div class="label-f modal-label">Название проекта</div>
-				<div class="input-bl error">
-					<span class="tip-bl tip-left">
-						<span class="tip-inner">введите название</span>
-					</span>
-					<input class="input-f" type="text" name="name" placeholder="Введите название">
+				<div class="section-tr cl modal-section-tr">
+					<div class="label-f modal-label">Название проекта</div>
+					<div class="input-bl">
+						<span class="tip-bl tip-left">
+							<span class="tip-inner">введите название</span>
+						</span>
+						<input class="input-f" type="text" name="name" placeholder="Введите название">
+					</div>
 				</div>
-			</div>
-			<div class="section-tr cl modal-section-tr">
-				<div class="label-f modal-label">Картинка проекта</div>
-				<div class="input-bl">
-					<span class="tip-bl tip-left">
-						<span class="tip-inner">изображение</span>
-					</span>
-					<div class="file-style-bl">
-						<input class="input-f input-dn-file" type="file" name="upload">
-						<div class="upload-hare">
-							<div class="upload-ico"></div>
-							<input class="input-f input-value" type="text" readonly placeholder="Загрузите изображение" />
+				<div class="section-tr cl modal-section-tr">
+					<div class="label-f modal-label">Картинка проекта</div>
+					<div class="input-bl">
+						<span class="tip-bl tip-left">
+							<span class="tip-inner">изображение</span>
+						</span>
+						<div class="file-style-bl">
+							<input class="input-f input-dn-file" type="file" name="upload">
+							<div class="upload-hare">
+								<div class="upload-ico"></div>
+								<input class="input-f input-value" type="text" readonly placeholder="Загрузите изображение" />
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="section-tr cl modal-section-tr">
-				<div class="label-f modal-label">URL проекта</div>
-				<div class="input-bl error">
-					<span class="tip-bl tip-left">
-						<span class="tip-inner">ссылка на проект</span>
-					</span>
-					<input class="input-f" type="text" name="link" placeholder="Добавьте ссылку">
+				<div class="section-tr cl modal-section-tr">
+					<div class="label-f modal-label">URL проекта</div>
+					<div class="input-bl">
+						<span class="tip-bl tip-left">
+							<span class="tip-inner">ссылка на проект</span>
+						</span>
+						<input class="input-f" type="text" name="link" placeholder="Добавьте ссылку">
+					</div>
+				</div>
+				<div class="section-tr cl modal-section-tr">
+					<div class="label-f modal-label">Описание</div>
+					<div class="input-bl">
+						<span class="tip-bl tip-left">
+							<span class="tip-inner">описание проекта</span>
+						</span>
+						<textarea class="textarea-f modal-textarea-f" name="message" id="" placeholder="Пара слов о Вашем проекте"></textarea>
+					</div>
+				</div>
+				<div class="section-tr">
+					<input type="submit" class="btn-style modal-btn easing" value="Добавить">
 				</div>
 			</div>
-			<div class="section-tr cl modal-section-tr">
-				<div class="label-f modal-label">Описание</div>
-				<div class="input-bl error">
-					<span class="tip-bl tip-left">
-						<span class="tip-inner">описание проекта</span>
-					</span>
-					<textarea class="textarea-f modal-textarea-f" name="message" id="" placeholder="Пара слов о Вашем проекте"></textarea>
-				</div>
-			</div>
-			<div class="section-tr">
-				<input type="submit" class="btn-style modal-btn easing" value="Добавить">
-			</div>
-		</div>
+		</form>
 	</div>
 	<!-- modal form : end -->
 	<!-- modal form ok : start -->
