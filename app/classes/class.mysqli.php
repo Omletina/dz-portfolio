@@ -157,9 +157,10 @@ class DB
             return $this->query($query);
       }
 
-      public function clean($var)
+      public function clean(&$var)
       {
-            return strtr($var, array("'" => "", "`" => ""));
+            $var = strtr($var, array("'" => "", "`" => ""));
+            return $var;
       }
 
       /**

@@ -3,10 +3,13 @@
 class BaseController{
 
     private $db;
+    private $auth;
 
     function __construct($conf) {
         // соединяемся с БД
         $this->db = new DB($conf);
+
+        $auth = new Auth($this->db);
     }
 
     /**
@@ -26,13 +29,37 @@ class BaseController{
      * ]
      */
     public function login(){
-        return array(
-            'content' => '',
-            'success' => false,
-            );
+        $res = array(
+                'success' => false,
+                );
+
+        $login = empty($_POST['login']) ? '' : $_POST['login'];
+        $pass = empty($_POST['password']) ? '' : $_POST['password'];
+
+        if(empty($login) || empty($pass)){
+            $res['content'] = 'Ни логин, ни пароль, не могут быть пустыми';
+            return $res;
+        }
+
+        $user = $this->auth->attempt($login, $pass);
+
+        if($user === false){
+            $res['content'] = 'Не верные логин или пароль';
+            return $res;
+        }
+
+        $res = array(
+            'content' => 'Вы успешно авторизованы',
+            'success' => true
+        );
+
+        return $res;
     }
 
 
+    /**
+     * отправка сообщения
+     */
     private function mailSend($mail){
 
         $MAIL = new PHPMailer();

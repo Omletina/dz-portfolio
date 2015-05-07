@@ -9,14 +9,15 @@ function dd($var) {
 
 require_once 'classes/class.phpmailer.php';
 require_once 'classes/class.mysqli.php';
+require_once 'classes/class.auth.php';
 require_once 'classes/BaseController.php';
 
 // mysql config
 $conf = array();
 $conf['host'] = 'localhost';
-$conf['user'] = 'root';
-$conf['pass'] = '';
-$conf['db'] = 'db_name';
+$conf['user'] = 'homestead';
+$conf['pass'] = 'secret';
+$conf['db'] = 'test_db';
 $conf['port'] = 3306;
 
 $app = new BaseController($conf);
