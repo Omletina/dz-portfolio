@@ -132,7 +132,9 @@ $(function() {
         _setUpListners: function() {
             popLink.on('click', popapForm._popapClick);
             closeBtn.on('click', popapForm._popapClose);
+            closeBtn.on('click', popapForm._removeReset);
             overflowBl.on('click', popapForm._popapCloseO);
+            overflowBl.on('click', popapForm._removeReset);
         },
 
          _popapClick: function(){
@@ -154,7 +156,14 @@ $(function() {
         _popapCloseO: function(){
             overflowBl.fadeOut(300);
             modalBl.fadeOut(300);
-         }
+        },
+
+        _removeReset: function() {
+            var inputs = modalBl.find('input, textarea');
+            console.log(inputs);
+            inputs.parent().removeClass('error');
+            $('#projectAdd').trigger( 'reset' );
+        },
 
     };
 
