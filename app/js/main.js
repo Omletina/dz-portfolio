@@ -161,7 +161,7 @@ $(function() {
         _removeReset: function() {
             var inputs = modalBl.find('input, textarea');
             console.log(inputs);
-            inputs.parent().removeClass('error');
+            inputs.parents('.input-bl').removeClass('error');
             $('#projectAdd').trigger( 'reset' );
         },
 
