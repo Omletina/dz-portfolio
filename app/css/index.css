@@ -54,6 +54,8 @@ textarea { resize:none; }
 .input-f, .textarea-f { border:1px solid #48cbe8; background:#fff; width:100%; border-radius:4px; color:#48cbe8; font-family:fira_sanslight; font-size:12px; webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box;}
    .input-f { height:41px; line-height:41px; padding:5px 9px; }
    .textarea-f { line-height:normal; padding:10px 9px 5px; }
+/*-- для ie8 --*/
+.no-flexbox .input-f { line-height:28px;}
 
 .input-f::-webkit-input-placeholder { color:#48cbe8; opacity: 1;}
 .input-f:-moz-placeholder,
@@ -197,7 +199,8 @@ textarea { resize:none; }
          .navigation-link.active { background:#3ba8c0; color:#fff; font-size:23px;}
          .navigation-link.active:before { display:none;}
    .navigation-item:last-child .navigation-link.active { font-size:21px;}
-
+ /*-- Для ie8 --*/
+.no-flexbox .navigation-item:first-child + .navigation-item + .navigation-item .navigation-link.active { font-size:21px;}
 
  /*-- contacts --*/
 .contacts { display:block; border-radius:4px; overflow:hidden; background:#3ba8c0; font-style: normal;}

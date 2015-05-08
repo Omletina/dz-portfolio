@@ -13,3 +13,5 @@
    .capcha img { display: inline-block; margin:16px 0;}
 
 .capcha-input { height: 32px; line-height:32px;}
+/*-- для ie8 --*/
+.no-flexbox .capcha-input { line-height:20px;}

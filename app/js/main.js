@@ -34,15 +34,15 @@ $(function() {
             console.log('Работа с формой связи');
             e.preventDefault();
 
-            var form = $(this),
-                url = '/ajax.php',
-                defObject = app._ajaxForm(form, url);
+            var form = $(this);
+             //   url = '/ajax.php',
+             //   defObject = app._ajaxForm(form, url);
 
             if(app._validateForm(form) === false) return false;
 
             console.log('ajax start');
 
-            if (defObject) {
+        /*    if (defObject) {
                 defObject.done(function(ans){
                     console.log(ans);
                     // var mes = ans.mes,
@@ -55,8 +55,8 @@ $(function() {
                     //     form.find('.error-mes').text(mes).show();
                     // }
                 });
-            };
-
+            }
+		*/
         },
 
         _validateForm: function(form) {
@@ -93,7 +93,7 @@ $(function() {
         },
 
         // Универсальныя функция ajax
-        _ajaxForm: function(form, url){
+/*        _ajaxForm: function(form, url){
             var data = form.serialize(), // собираем данные из формы в объект date
                 defObj = $.ajax({ // Возвращает Deferred Object
                     type: 'POST',
@@ -106,6 +106,7 @@ $(function() {
                 });
              return defObj;
          }
+*/
 
     };
 

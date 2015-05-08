@@ -13,3 +13,6 @@
 .project-item.soother { font-family:fira_sansbook; font-size:13px; color: #fff; height:130px; border: 1px dashed #3ba8c0; border-radius:4px; display: inline-block; vertical-align: middle; background:#edf8fc; cursor:pointer;}
    .project-item.soother .project-description { display:table-cell; width:183px; height:130px; color:#3ba8c0; font-family:fira_sanslight; font-size:13px; vertical-align:middle; text-align:center;}
    .project-desc-centr { display:inline-block; padding:45px 0 0 0; background: url(../img/soother-ico.png) no-repeat 50% 0;}
+
+/*-- для ie8 --*/
+.no-flexbox .project-item { margin:12px 9px 25px 9px;}
