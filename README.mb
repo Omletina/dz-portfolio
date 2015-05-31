@@ -1,8 +1,26 @@
-МОЙ ПРОЕКТ
+## Генератор водяных знаков
 
-Как его установить?
+[Школа веб-разработки <b>Loftschool</b>](http://loftschool.ru)
 
-1. git clone https://github.com/Omletina/dz-portfolio
-2. npm i
-3. bower i
-4. gulp
+
+
+### *Установка*
+Для установки проекта требуется: [node.js](http://nodejs.org/), [Node Package Menager(npm)](http://nodejs.org/).
+
+
+* Клонировать репозиторий
+
+    `git clone https://github.com/Omletina/watermark.git`
+            
+* Выполнить установку необходимых npm-пакетов
+    
+    `npm install`
+            
+* Выполнить установку компонентов
+    
+    `bower install`
+            
+* Запустить веб сервер
+
+    `gulp`
+
